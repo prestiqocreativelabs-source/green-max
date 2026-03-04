@@ -6,6 +6,7 @@ import Lenis from 'lenis';
 import Navigation from './sections/Navigation';
 import Hero from './sections/Hero';
 import About from './sections/About';
+import PresidentHighlight from "./sections/PresidentHighlight";
 import CoreValues from './sections/CoreValues';
 import VisionMission from './sections/VisionMission';
 import CEOMessage from './sections/CEOMessage';
@@ -68,6 +69,7 @@ function App() {
       <main>
         <Hero />
         <About />
+        <PresidentHighlight/>
         <CoreValues />
         <VisionMission />
         <CEOMessage />
