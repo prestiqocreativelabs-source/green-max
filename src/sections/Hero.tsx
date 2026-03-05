@@ -12,8 +12,23 @@ const Hero = () => {
   const titleRef = useRef<HTMLHeadingElement>(null);
   const subtitleRef = useRef<HTMLParagraphElement>(null);
   const ctaRef = useRef<HTMLButtonElement>(null);
+  const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
+    const video = videoRef.current;
+
+    // Force autoplay for iOS Safari
+    if (video) {
+      video.muted = true;
+      const playPromise = video.play();
+
+      if (playPromise !== undefined) {
+        playPromise.catch(() => {
+          console.log('Autoplay prevented');
+        });
+      }
+    }
+
     const ctx = gsap.context(() => {
       gsap.set(
         [logoRef.current, titleRef.current, subtitleRef.current, ctaRef.current],
@@ -77,15 +92,17 @@ const Hero = () => {
       {/* Background Video */}
       <div className="absolute inset-0 z-0">
         <video
+          ref={videoRef}
           className="w-full h-full object-cover pointer-events-none"
           src="/videos/hero-bg.mp4"
           autoPlay
           muted
           loop
           playsInline
-          preload="none"
-          controls={false}
+          webkit-playsinline="true"
+          preload="auto"
           disablePictureInPicture
+          controlsList="nodownload nofullscreen noremoteplayback"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/60" />
       </div>
