@@ -76,7 +76,7 @@ const Certifications = () => {
   ];
 
   const strengths = [
-    '15+ Years of Industry Experience',
+    '30+ Years of Industry Experience',
     'In-house Production Units in Uttar Pradesh',
     'Dedicated Design, Execution, and Maintenance Teams',
     'Proven Record with Government & Corporate Clients',

@@ -75,7 +75,7 @@ const About = () => {
   }, []);
 
   const stats = [
-    { icon: Calendar, value: 15, suffix: '+', label: 'Years Experience' },
+    { icon: Calendar, value: 30, suffix: '+', label: 'Years Experience' },
     { icon: Award, value: 150, suffix: '+', label: 'Projects Completed' },
     { icon: TreePine, value: 3500, suffix: '+', label: 'Plant Species' },
     { icon: Users, value: 100, suffix: '%', label: 'Client Satisfaction' },
@@ -132,7 +132,7 @@ const About = () => {
 
             <p className="text-lg text-gray-600 leading-relaxed">
               Sami Greenmax Landscape Pvt. Ltd. is one of India's most trusted names in integrated
-              landscape and horticulture solutions. With over 15 years of proven excellence, the
+              landscape and horticulture solutions. With over 30 years of proven excellence, the
               company specializes in large-scale landscape design, execution, and maintenance for
               government, corporate, and institutional projects across the country.
             </p>

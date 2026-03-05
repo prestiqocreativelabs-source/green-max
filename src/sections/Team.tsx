@@ -81,7 +81,7 @@ const Team = () => {
 
     // ✅ NEW MEMBER — replace details below
     {
-      name: 'Pankaj Kalonia',
+      name: 'Mr. Pankaj Kalonia',
       position: 'Finance Head',
       image: '/images/team/Pankaj Kalonia.jpg',
       description: 'Managing the funds with the elcellence',
