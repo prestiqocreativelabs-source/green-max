@@ -189,7 +189,7 @@ const CompanyGrowth = () => {
 
             <div className="grid grid-cols-2 gap-4">
               <div className="bg-green-50 rounded-xl p-6 text-center">
-                <p className="text-2xl sm:text-3xl font-bold text-green-brand">15+</p>
+                <p className="text-2xl sm:text-3xl font-bold text-green-brand">30+</p>
                 <p className="text-sm text-gray-600">Years Experience</p>
               </div>
               <div className="bg-green-50 rounded-xl p-6 text-center">

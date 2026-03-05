@@ -110,8 +110,8 @@ const Contact = () => {
     {
       icon: Globe,
       title: 'Website',
-      content: 'www.samigreenmax.com',
-      href: 'https://www.samigreenmax.com',
+      content: 'samigreenmaxlandscape.com',
+      href: 'https://www.samigreenmaxlandscape.com',
     },
   ];
 

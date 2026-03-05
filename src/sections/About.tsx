@@ -108,7 +108,7 @@ const About = () => {
                     <TreePine className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <p className="text-2xl font-display font-bold text-green-brand">15+</p>
+                    <p className="text-2xl font-display font-bold text-green-brand">30+</p>
                     <p className="text-sm text-gray-600">Years of Excellence</p>
                   </div>
                 </div>
