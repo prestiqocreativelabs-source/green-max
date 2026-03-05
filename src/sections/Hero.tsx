@@ -1,3 +1,4 @@
+
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -17,16 +18,21 @@ const Hero = () => {
   useEffect(() => {
     const video = videoRef.current;
 
-    // Force autoplay for iOS Safari
     if (video) {
       video.muted = true;
-      const playPromise = video.play();
+      video.setAttribute("playsinline", "true");
+      video.setAttribute("webkit-playsinline", "true");
 
-      if (playPromise !== undefined) {
-        playPromise.catch(() => {
-          console.log('Autoplay prevented');
-        });
-      }
+      const attemptPlay = () => {
+        const playPromise = video.play();
+        if (playPromise !== undefined) {
+          playPromise.catch(() => {});
+        }
+      };
+
+      attemptPlay();
+
+      video.addEventListener("loadeddata", attemptPlay);
     }
 
     const ctx = gsap.context(() => {
@@ -94,16 +100,17 @@ const Hero = () => {
         <video
           ref={videoRef}
           className="w-full h-full object-cover pointer-events-none"
-          src="/videos/hero-bg.mp4"
           autoPlay
           muted
           loop
           playsInline
-          webkit-playsinline="true"
           preload="auto"
           disablePictureInPicture
           controlsList="nodownload nofullscreen noremoteplayback"
-        />
+        >
+          <source src="/videos/hero-bg.mp4" type="video/mp4" />
+        </video>
+
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/60" />
       </div>
 
