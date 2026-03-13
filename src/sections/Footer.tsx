@@ -124,15 +124,14 @@ const Footer = () => {
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-green-brand flex-shrink-0 mt-0.5" />
                 <span className="text-gray-400 text-sm">
-                  House No 417, Opp. Gyan Devi School,
+                  219, DLF Tower B , Jasola , New Delhi -110025,
                   <br />
-                  Sector-10, Gurugram (Haryana) 122001
                 </span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-green-brand flex-shrink-0" />
                 <a
-                  href="tel:+919810322073"
+                  href="tel:+91 11 6901 0196"
                   className="text-gray-400 hover:text-green-brand transition-colors text-sm"
                 >
                   +91 98103 22073

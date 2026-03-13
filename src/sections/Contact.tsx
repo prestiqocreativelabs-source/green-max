@@ -5,7 +5,7 @@ import { MapPin, Phone, Mail, Globe, Send, CheckCircle2 } from 'lucide-react';
 
 gsap.registerPlugin(ScrollTrigger);
 
-const Contact = () => {
+function Contact() {
   const sectionRef = useRef<HTMLDivElement>(null);
   const formRef = useRef<HTMLFormElement>(null);
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -64,18 +64,18 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     // Create mailto link with form data
     const subject = encodeURIComponent(`Enquiry from ${formData.name}: ${formData.subject}`);
     const body = encodeURIComponent(
       `Name: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\n\nMessage:\n${formData.message}`
     );
-    
+
     // Open email client
     window.location.href = `mailto:samigreenmax1980@gmail.com?subject=${subject}&body=${body}`;
-    
+
     setIsSubmitted(true);
-    
+
     // Reset form after 3 seconds
     setTimeout(() => {
       setIsSubmitted(false);
@@ -93,13 +93,13 @@ const Contact = () => {
     {
       icon: MapPin,
       title: 'Project Office',
-      content: 'House No 417, Opp. Gyan Devi School, Sector-10, Gurugram (Haryana) 122001',
+      content: '219, DLF Tower B , Jasola , New Delhi -110025',
     },
     {
       icon: Phone,
       title: 'Phone',
-      content: '+91 98103 22073',
-      href: 'tel:+919810322073',
+      content: ' +91 11 6901 0196',
+      href: 'tel: +91 11 6901 0196',
     },
     {
       icon: Mail,
@@ -175,9 +175,9 @@ const Contact = () => {
             <div className="mt-8 rounded-2xl overflow-hidden shadow-lg h-64 bg-gray-100 flex items-center justify-center">
               <div className="text-center">
                 <MapPin className="w-12 h-12 text-green-brand mx-auto mb-2" />
-                <p className="text-gray-600">Gurugram, Haryana, India</p>
+                <p className="text-gray-600">Jasola Vihar, New Delhi, India</p>
                 <a
-                  href="https://maps.google.com/?q=Gurugram,Haryana,India"
+                  href="https://maps.app.goo.gl/4oRGgpiydsmbFpNu7"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-green-brand hover:underline text-sm mt-2 inline-block"
@@ -219,8 +219,7 @@ const Contact = () => {
                         onChange={handleChange}
                         required
                         className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-green-brand focus:ring-2 focus:ring-green-brand/20 outline-none transition-all"
-                        placeholder="John Doe"
-                      />
+                        placeholder="John Doe" />
                     </div>
                     <div>
                       <label className="block text-sm font-medium text-gray-700 mb-2">
@@ -233,8 +232,7 @@ const Contact = () => {
                         onChange={handleChange}
                         required
                         className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-green-brand focus:ring-2 focus:ring-green-brand/20 outline-none transition-all"
-                        placeholder="john@example.com"
-                      />
+                        placeholder="john@example.com" />
                     </div>
                   </div>
 
@@ -249,8 +247,7 @@ const Contact = () => {
                         value={formData.phone}
                         onChange={handleChange}
                         className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-green-brand focus:ring-2 focus:ring-green-brand/20 outline-none transition-all"
-                        placeholder="+91 98765 43210"
-                      />
+                        placeholder="+91 98765 43210" />
                     </div>
                     <div>
                       <label className="block text-sm font-medium text-gray-700 mb-2">
@@ -285,8 +282,7 @@ const Contact = () => {
                       required
                       rows={5}
                       className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-green-brand focus:ring-2 focus:ring-green-brand/20 outline-none transition-all resize-none"
-                      placeholder="Tell us about your project..."
-                    />
+                      placeholder="Tell us about your project..." />
                   </div>
 
                   <button
@@ -309,6 +305,6 @@ const Contact = () => {
       </div>
     </section>
   );
-};
+}
 
 export default Contact;
