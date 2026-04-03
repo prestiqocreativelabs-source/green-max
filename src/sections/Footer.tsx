@@ -58,7 +58,7 @@ const Footer = () => {
             </h3>
             <p className="text-gray-400 text-sm leading-relaxed mb-6">
               Sustaining Nature, Shaping Tomorrow. India's trusted name in integrated landscape
-              and horticulture solutions for over 15 years.
+              and horticulture solutions for over 30 years.
             </p>
             <div className="flex gap-3">
               <a
