@@ -105,7 +105,7 @@ const Services = () => {
       title: 'Terrace & Rooftop Gardens',
       description:
         'Maximize your urban space with our innovative terrace and rooftop garden designs. We create stunning green oases in the sky, complete with proper waterproofing, drainage systems, lightweight growing media, and a variety of plants that thrive in elevated environments.',
-      image: '/images/services/rooftop-garden.jpg',
+      image: '/images/services/rooftop-garden.jpeg',
     },
     {
       icon: Bug,
