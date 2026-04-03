@@ -72,6 +72,26 @@ const CompletedProjects = () => {
       description: 'Campus-wide landscape development and maintenance',
       image: '/images/projects/du.png',
     },
+    { name: 'HSIIDC IMT Palwal',
+      location: 'Haryana',
+      description: 'Industrial township landscaping project',
+      image: '/images/projects/HSIIDC IMT Palwal.png',
+
+    },
+    { name: 'Municipal Corporation Moradabad',
+      location: 'Uttar Pradesh',
+      description: 'Urban green infrastructure development',
+      image: '/images/projects/Municipal Corporation Moradabad.png',
+    },
+    { name: 'AMU Aligarh',
+      location: 'Uttar Pradesh',
+      description: 'University campus landscape development',
+      image: '/images/projects/AMU Aligarh.png',
+
+    },
+
+    
+  
   ];
 
   return (
