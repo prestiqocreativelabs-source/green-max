@@ -55,6 +55,7 @@ const Clients = () => {
     { name: 'Municipal Corporation of Faridabad', type: 'Government', logo: '/images/clients/client-16.png' },
     { name: 'Delhi University', type: 'Educational', logo: '/images/clients/client-17.png' },
     { name: 'Senso E Biz Solutions Ltd', type: 'Corporate', logo: '/images/clients/client-18.png' },
+    { name: 'G R Infraprojects Limited', type: 'Corporate', logo: '/images/clients/client-19.png' },
   ];
 
   return (
