@@ -37,30 +37,6 @@ const OngoingProjects = () => {
 
   const ongoingProjects = [
     {
-      name: 'HSIIDC IMT Palwal',
-      location: 'Haryana',
-      status: 'In Progress',
-      progress: 75,
-      description: 'Industrial township landscaping project',
-      image: '/images/ongoing/HSIIDC IMT Palwal.png',
-    },
-    {
-      name: 'Municipal Corporation Moradabad',
-      location: 'Uttar Pradesh',
-      status: 'In Progress',
-      progress: 60,
-      description: 'Urban green infrastructure development',
-      image: '/images/ongoing/Municipal Corporation Moradabad.png',
-    },
-    {
-      name: 'AMU Aligarh',
-      location: 'Uttar Pradesh',
-      status: 'In Progress',
-      progress: 45,
-      description: 'University campus landscape development',
-      image: '/images/ongoing/AMU Aligarh.png',
-    },
-    {
       name: 'Silver Glade Group',
       location: 'Gurugram',
       status: 'In Progress',
